@@ -1,51 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-interface HoverInfo {
-      country: string;
+interface ShowBoxProps {
+      lag: number;
       lat: number;
-      lon: number;
       elevation: number;
+      country: string;
 }
-const useMapHover = () => {
-      const [hoverInfo, setHoverInfo] = useState<HoverInfo | null>(null);
 
-      useEffect(() => {
-            const handleMouseOver = (event: MouseEvent) => {
-                  // Mock data for demonstration purposes
-                  const country = 'Country Name';
-                  const lat = event.clientY; // Replace with actual latitude
-                  const lon = event.clientX; // Replace with actual longitude
-                  const elevation = 100; // Replace with actual elevation
-
-                  setHoverInfo({ country, lat, lon, elevation });
-                  console.log(`Country: ${country}, Lat: ${lat}, Lon: ${lon}, Elevation: ${elevation}`);
-            };
-
-            window.addEventListener('mousemove', handleMouseOver);
-
-            return () => {
-                  window.removeEventListener('mousemove', handleMouseOver);
-            };
-      }, []);
-
-      return hoverInfo;
+const ShowBox: React.FC<ShowBoxProps> = ({ lag, lat, elevation, country }) => {
+      return (
+            <div className=' bg-gray-200 rounded-md w-wrap text-black p-2 w-auto absolute '>
+                  <p>Longitude: {lag}</p>
+                  <p>Latitude: {lat}</p>
+                  <p>Elevation: {elevation} meters</p>
+                  <p>Country: {country}</p>
+            </div>
+      );
 };
 
-
-const ShowBox = () => {
-    const hoverInfo = useMapHover();
-  return (
-    <>
-    {hoverInfo && (
-      <div>
-            <p>Country: {hoverInfo.country}</p>
-            <p>Latitude: {hoverInfo.lat}</p>
-            <p>Longitude: {hoverInfo.lon}</p>
-            <p>Elevation: {hoverInfo.elevation}</p>
-      </div>
-)}
-    </>
-  )
-}
-
-export default ShowBox
+export default ShowBox;

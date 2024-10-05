@@ -17,7 +17,6 @@ const page = () => {
       <ResizableHandle withHandle />
       <ResizablePanel>
       {/* <GlobeComponent/> */}
-      Go
       </ResizablePanel>
     </ResizablePanelGroup>
     </>

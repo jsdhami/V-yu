@@ -1,16 +1,9 @@
 "use client";
 import { useEffect } from 'react';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
+// import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 const GlobeComponent = () => {
-  const hoveredLabel = {
-    Country: '',
-    Latitude: '',
-    Longitude: '',
-    Elevation: '',
-  };
 
-  
   useEffect(() => {
     const loadGlobe = async () => {
       const Globe = (await import('globe.gl')).default;
@@ -24,8 +17,31 @@ const GlobeComponent = () => {
         .labelLng('Longitude')
         .labelText('Code')
         .labelResolution(5)
-        .onLabelHover((label) => console.log(label))
-        
+        .labelLabel(() => `
+           <div className=' bg-gray-200 rounded-md w-wrap text-black p-2 w-auto absolute '>
+                  <p>Longitude: ${data.Code}</p>
+                  <p>Latitude: ${data.Country}</p>
+                  <p>Elevation: ${data.Latitude} meters</p>
+                  <p>Country: ${data.Longitude}</p>
+            </div>
+        `)        
+      //   .onLabelHover(() =>`
+      //     <div className=' bg-gray-200 rounded-md w-wrap text-black p-2 w-auto absolute '>
+      //             <p>Longitude: ${data.Code}</p>
+      //             <p>Latitude: ${data.Country}</p>
+      //             <p>Elevation: ${data.Latitude} meters</p>
+      //             <p>Country: ${data.Longitude}</p>
+      //       </div>
+      // `)
+        .labelDotRadius(0.5)
+        .showAtmosphere(true)
+        .showGraticules(true)
+        .pointRadius(0.5)
+        .pointResolution(20)
+        .onPointHover((point) => {
+          if (!point) return;
+          console.log('hovered over a point', point);
+        });        
       const globeElement = document.getElementById('GlobeComponent');
       if (globeElement) {
         globe(globeElement);
@@ -38,22 +54,7 @@ const GlobeComponent = () => {
   return (
     <>
     <div id="GlobeComponent" className='w-full min-h-screen'>
-    <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <div className='absolute' id='hoverme'>
-                </div>
-              </TooltipTrigger>
-              <TooltipContent>
-                <div>
-                  <strong>Country:</strong> {hoveredLabel.Country || 'N/A'}<br />
-                  <strong>Lat:</strong> {hoveredLabel.Latitude}<br />
-                  <strong>Lng:</strong> {hoveredLabel.Longitude}<br />
-                  <strong>Elevation:</strong> {hoveredLabel.Elevation || 'N/A'} m
-                </div>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+  
     </div>;
     </>
   )
