@@ -5,6 +5,7 @@ import {
       ResizablePanel,
       ResizablePanelGroup,
     } from "@/components/ui/resizable"
+import Plots from '@/components/Plots/Plots'
 
 const page = () => {
   return (
@@ -16,7 +17,7 @@ const page = () => {
       </ResizablePanel>
       <ResizableHandle withHandle />
       <ResizablePanel>
-      {/* <GlobeComponent/> */}
+      <Plots/>
       </ResizablePanel>
     </ResizablePanelGroup>
     </>
