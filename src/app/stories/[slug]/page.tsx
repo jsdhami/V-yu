@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft, Clock, Tag } from 'lucide-react';
 import { stories } from '../data'; // Make sure to move your stories data to a separate file
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import Image from 'next/image';
 
 // Helper function to create URL-friendly slug
 const createSlug = (title: string) => {
@@ -72,9 +73,11 @@ const StoryPage = ({ params }: PageProps) => {
           className="max-w-4xl mx-auto bg-gray-800 rounded-lg overflow-hidden shadow-2xl"
         >
           <div className="relative h-96">
-            <img
+            <Image
               src={story.image}
               alt={story.title}
+              height={384}
+              width={768}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>

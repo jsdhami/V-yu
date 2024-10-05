@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Search } from "lucide-react";
+import Image from 'next/image';
 
 const stories = [
     {
@@ -129,9 +130,11 @@ const Stories = () => {
                 key={index}
                 className="bg-gray-800 rounded-lg overflow-hidden shadow-lg"
               >
-                <img
+                <Image
                   src={story.image}
                   alt={story.title}
+                  width={400}
+                  height={300}
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">

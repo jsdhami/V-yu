@@ -1,17 +1,23 @@
-// app/stories/page.tsx
 "use client";
 import React, { useState } from "react";
 import { Search } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { stories } from './data';
+import Image from "next/image";
 
-// Helper function to create URL-friendly slug
 const createSlug = (title: string) => {
   return title.toLowerCase().replace(/[^a-zA-Z0-9]+/g, '-');
 };
 
-const StoryCard = ({ story, index }: { story: any; index: number }) => {
+interface Story {
+  title: string;
+  image: string;
+  description: string;
+  tags: string[];
+}
+
+const StoryCard = ({ story, index }: { story: Story; index: number }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -21,9 +27,11 @@ const StoryCard = ({ story, index }: { story: any; index: number }) => {
       <Link href={`/stories/${createSlug(story.title)}`}>
         <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer group h-full flex flex-col justify-between">
           <div className="relative overflow-hidden h-48">
-            <img
+            <Image
               src={story.image}
               alt={story.title}
+              height={1920}
+              width={1080}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
@@ -37,7 +45,7 @@ const StoryCard = ({ story, index }: { story: any; index: number }) => {
             </p>
             <div className="flex flex-wrap gap-2 mt-auto">
               {/* Don't change this (tag, tagIndex) */}
-              {story.tags.map((tag, tagIndex) => (
+              {story.tags.map((tag: string, tagIndex: number) => (
                 <span
                   key={tagIndex}
                   className="bg-blue-700 text-xs px-2 py-1 rounded transition-all duration-300 hover:bg-blue-600"
