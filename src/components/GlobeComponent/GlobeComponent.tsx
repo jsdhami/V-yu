@@ -6,10 +6,9 @@ import { useEffect } from 'react';
 const GlobeComponent = () => {
   useEffect(() => {
     const loadGlobe = async () => {
-      // const res = await fetch('../../public/data/observatory_data_filtered.csv');
-      // const data = await res.text();
       const Globe = (await import('globe.gl')).default;
-
+      const res = await fetch('https://raw.githubusercontent.com/jsdhami/Vayu/refs/heads/main/public/data/observatory_data_filtered.csv');
+      console.log(res.json());
       const globe = Globe()
         .globeImageUrl('//unpkg.com/three-globe/example/img/earth-day.jpg')
         .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
