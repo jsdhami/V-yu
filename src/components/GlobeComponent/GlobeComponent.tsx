@@ -12,13 +12,14 @@ const GlobeComponent = () => {
       const data = await res.json();
       console.log(data);
       const globe = Globe()
-        .globeImageUrl('../../public/images/earth.jpg')
+        .globeImageUrl('//unpkg.com/three-globe/example/img/earth-day.jpg')
         .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
         .labelsData(data)
         .labelLat('Latitude')
         .labelLng('Longitude')
         .labelText('Code')
-        .labelResolution(2);
+        .labelResolution(5);
+        
 
       const globeElement = document.getElementById('GlobeComponent');
       if (globeElement) {
