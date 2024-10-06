@@ -15,6 +15,7 @@ const navbar = () => {
               <li className="text-md font-medium text-center hover:text-sky-500"><Link href='/'>Home</Link></li>
               <li className="text-md font-medium text-center hover:text-sky-500"><Link href='/about'>About</Link></li>
               <li className="text-md font-medium text-center hover:text-sky-500"><Link href='/stories'>Stories</Link></li>
+              <li className="text-md font-medium text-center hover:text-sky-500"><Link href='/audiobook'>Audiobook</Link></li>
               <li className="text-md font-medium text-center hover:text-sky-500"><Link href='/dataexplorer'>Data Explorer</Link></li>
               <li className="text-md font-medium text-center hover:text-sky-500"><Link href='/team'>Team</Link></li>
               <li className="text-md text-center hover:text-sky-500 bg-white hover:bg-gray-200 text-black font-medium p-2 rounded-full px-6 shadow-md"><Link href='https://github.com/jsdhami/ghgplot'>ghgplot</Link></li>

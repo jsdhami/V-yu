@@ -2,7 +2,7 @@
 const nextConfig = {
       reactStrictMode: true,
       images: {
-        domains: ['random.imagecdn.app','moonquake.jsdhami.com.np', 'picsum.photos', 'github.com'],
+        domains: ['random.imagecdn.app','moonquake.jsdhami.com.np', 'picsum.photos', 'github.com', 'images.unsplash.com'],
       },
       };
     

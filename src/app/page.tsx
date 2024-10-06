@@ -23,12 +23,14 @@ export default function Home() {
             Discover the impact of climate change and learn how you can make a
             difference.
           </p>
-          <button className="bg-white text-black text-lg font-bold py-2 px-4 rounded-md">
-            <Link href="https://go.com">Get Started</Link>
-          </button>
+          <div className=" flex flex-col flex-wrap gap-4 justify-center items-center">
+            <button className="bg-white text-black text-lg font-bold py-2 px-4 rounded-md">
+              <Link href="https://rishikesh0523.github.io/the-climate-story">Get Started</Link>
+            </button>
+          </div>
         </div>
       </div>
-    
+
     </>
   );
 }

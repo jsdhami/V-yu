@@ -1,10 +1,10 @@
 export const stories = [
     {
-      image: "https://picsum.photos/id/1/400/300",
+      image: "https://github.com/jsdhami/Vayu/blob/main/public/images/blog/blog1.png?raw=true",
       title: "The Invisible Threat: Rising House Gases and Their Impact on Climate Events Like Hurricane Sandy",
       description:
-        "Carbon dioxide emissions data are now available at a granular level: from city blocks to entire counties across the contiguous U.S. The latest dataset from the Vulcan Project, called Vulcan 4.0, helps researchers to analyze annual CO2 emissions at fine scales and helps decision makers to develop localized carbon management strategies.",
-      tags: ["Urban", "Anthropogenic Emissions"],
+        "Tropical cyclones are rapidly rotating storm systems that form over warm ocean waters. They have low-pressure centers, strong winds, and heavy rain. The names used for these storms vary depending on their location. Tropical cyclones use warm, moist air as fuel and warmer ocean temperatures provide more fuel, potentially intensifying storms. Warm sea surface temperatures are required for formation and strengthening, with higher temperatures resulting in faster intensification. High ocean heat content allows storms to achieve higher intensities, while faster-moving systems can intensify with lower ocean heat content. Climate change can affect tropical cyclones in various ways, including intensification of rainfall and wind speed, decrease in overall frequency, increase in the frequency of very intense storms, and poleward extension of where cyclones reach maximum intensity.",
+      tags: ["Climate", "Hurricane", "House Gases"],
     },
     {
       image: "https://picsum.photos/id/10/400/300",

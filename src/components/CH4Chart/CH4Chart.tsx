@@ -3,6 +3,18 @@
 import React, { useEffect } from 'react';
 import * as echarts from 'echarts';
 
+// make domy data
+const data = [
+  { name: 'Mon', value: 120 },
+  { name: 'Tue', value: 200 },
+  { name: 'Wed', value: 150 },
+  { name: 'Thu', value: 80 },
+  { name: 'Fri', value: 70 },
+  { name: 'Sat', value: 110 },
+  { name: 'Sun', value: 130 },
+];
+
+
 const CH4Chart = () => {
 
   useEffect(() => {
@@ -14,17 +26,13 @@ const CH4Chart = () => {
       // },
       tooltip: {},
       xAxis: {
-        type: 'category',
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        data: data.map((item) => item.name),
       },
-      yAxis: {
-        type: 'value',
-      },
-    
+      yAxis: {},
       series: [
         {
-          type: 'line',
-          data: [120, 200, 150, 80, 70, 110, 130],
+          type: 'bar',
+          data: data.map((item) => item.value),
         },
       ],
     };
