@@ -1,7 +1,7 @@
 export const stories = [
     {
       image: "https://picsum.photos/id/1/400/300",
-      title: "Hurricane Sandy",
+      title: "The Invisible Threat: Rising House Gases and Their Impact on Climate Events Like Hurricane Sandy",
       description:
         "Carbon dioxide emissions data are now available at a granular level: from city blocks to entire counties across the contiguous U.S. The latest dataset from the Vulcan Project, called Vulcan 4.0, helps researchers to analyze annual CO2 emissions at fine scales and helps decision makers to develop localized carbon management strategies.",
       tags: ["Urban", "Anthropogenic Emissions"],

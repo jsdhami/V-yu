@@ -1,14 +1,19 @@
 "use client";
-import { useEffect } from 'react';
 
+import { useEffect } from 'react';
 const GlobeComponent = () => {
-  
+  interface Data {
+    Code: string;
+    Country: string;
+    Latitude: number;
+    Longitude: number;
+  }
   useEffect(() => {
     const loadGlobe = async () => {
       const Globe = (await import('globe.gl')).default;
       const res = await fetch('https://raw.githubusercontent.com/jsdhami/Vayu/refs/heads/main/public/data/co2_key_surface-flask_1_ccgg_event_filtered.json');
       const data = await res.json();
-      // use these data to hover over the globe
+      
       const globe = Globe()
         .globeImageUrl('//unpkg.com/three-globe/example/img/earth-day.jpg')
         .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
@@ -18,12 +23,15 @@ const GlobeComponent = () => {
         .labelText('Code')
         .labelResolution(5)
         .labelDotRadius(0.2)
-        .labelLabel((data)=>`
-          <h1>${data.Code}</h1>
-          <p>Country: ${data.Country}</p>
-          <p>Latitude: ${data.Latitude}</p>
-          <p>Longitude: ${data.Longitude}</p>
-        `)
+        .labelLabel((obj: object) => {
+          const data = obj as Data;
+          return `
+            <h1>${data.Code}</h1>
+            <p>Country: ${data.Country}</p>
+            <p>Latitude: ${data.Latitude}</p>
+            <p>Longitude: ${data.Longitude}</p>
+          `;
+        })
         
            
         
