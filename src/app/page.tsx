@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import Navbar from "@/components/navbar/navbar";
 
 export default function Home() {
   return (
     <>
+     <Navbar/>
       <div className="relative flex w-full flex-col items-top justify-center min-h-screen overflow-hidden">
         <video
           src="https://earth.gov/ghgcenter/earth-gas.83289921.mp4"

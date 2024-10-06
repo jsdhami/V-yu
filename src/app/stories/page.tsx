@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { stories } from './data';
 import Image from "next/image";
+import Navbar from "@/components/navbar/navbar";
 
 const createSlug = (title: string) => {
   return title.toLowerCase().replace(/[^a-zA-Z0-9]+/g, '-');
@@ -19,6 +20,8 @@ interface Story {
 
 const StoryCard = ({ story, index }: { story: Story; index: number }) => {
   return (
+    <>
+    <Navbar/>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -112,6 +115,7 @@ const Stories = () => {
         </div>
       </main>
     </section>
+    </>
   );
 };
 

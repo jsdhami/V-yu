@@ -6,11 +6,14 @@ import {
       ResizablePanelGroup,
     } from "@/components/ui/resizable"
 import CH4Chart from '@/components/CH4Chart/CH4Chart'
-import NotebookViewer from '@/components/NotebookViewer/NotebookViewer'
+// import NotebookViewer from '@/components/NotebookViewer/NotebookViewer'
+import Navbar from "@/components/navbar/navbar";
+
 
 const page = () => {
   return (
     <>
+    <Navbar/>
     <ResizablePanelGroup direction="vertical" className='w-full min-h-screen'>
       <ResizablePanel>
       <GlobeComponent/>

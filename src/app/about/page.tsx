@@ -1,8 +1,12 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Globe2, Users, Rocket, Database, TreePine, ChartBar } from 'lucide-react';
+import Navbar from "@/components/navbar/navbar";
 
 export default function AboutPage() {
   return (
+
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-black text-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto text-center mb-16 mt-20">
@@ -91,5 +95,6 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
