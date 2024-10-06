@@ -25,12 +25,11 @@ export default function Home() {
           </p>
           <div className=" flex flex-col flex-wrap gap-4 justify-center items-center">
             <button className="bg-white text-black text-lg font-bold py-2 px-4 rounded-md">
-              <Link href="https://rishikesh0523.github.io/the-climate-story">Get Started</Link>
+              <Link href="https://rishikesh0523.github.io/the-climate-story" target="_blank">Get Started</Link>
             </button>
           </div>
         </div>
       </div>
-
     </>
   );
 }
