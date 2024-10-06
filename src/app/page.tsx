@@ -1,4 +1,7 @@
 "use client";
+
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
@@ -19,7 +22,7 @@ export default function Home() {
             difference.
           </p>
           <button className="bg-white text-black text-lg font-bold py-2 px-4 rounded-md">
-            Get Started
+            <Link href="/animatedstory">Get Started</Link>
           </button>
         </div>
       </div>
