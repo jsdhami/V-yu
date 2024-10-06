@@ -5,13 +5,18 @@ import * as echarts from 'echarts';
 
 // make domy data
 const data = [
-  { name: 'Mon', value: 120 },
-  { name: 'Tue', value: 200 },
-  { name: 'Wed', value: 150 },
-  { name: 'Thu', value: 80 },
-  { name: 'Fri', value: 70 },
-  { name: 'Sat', value: 110 },
-  { name: 'Sun', value: 130 },
+  { name: 'Jan', value: 120 },
+  { name: 'Feb', value: 200 },
+  { name: 'Mar', value: 550 },
+  { name: 'April', value: 80 },
+  { name: 'May', value: 70 },
+  { name: 'June', value: 710 },
+  { name: 'July', value: 100 },
+  { name: 'Aug', value: 200 },
+  { name: 'Sep', value: 300 },
+  { name: 'Oct', value: 400 },
+  { name: 'Nov', value: 500 },
+  { name: 'Dec', value: 600 },
 ];
 
 
@@ -21,9 +26,9 @@ const CH4Chart = () => {
     const chartDom = document.getElementById('main') as HTMLElement;
     const myChart = echarts.init(chartDom);
     const option: echarts.EChartsOption = {
-      // title: {
-      //   text: 'ECharts Example',
-      // },
+      title: {
+        text: 'Monthly Average Time Series of CO2 Concentration',
+      },
       tooltip: {},
       xAxis: {
         data: data.map((item) => item.name),
@@ -31,7 +36,7 @@ const CH4Chart = () => {
       yAxis: {},
       series: [
         {
-          type: 'bar',
+          type: 'scatter',
           data: data.map((item) => item.value),
         },
       ],
