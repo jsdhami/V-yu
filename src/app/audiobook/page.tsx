@@ -65,7 +65,7 @@ const Page = () => {
       if (isPlaying) {
         audioRef.current.pause();
       } else {
-        audioRef.current.play().catch(err => {
+        audioRef.current.play().catch(() => {
           setError("Error playing audio. Please try again.");
           setIsPlaying(false);
         });
