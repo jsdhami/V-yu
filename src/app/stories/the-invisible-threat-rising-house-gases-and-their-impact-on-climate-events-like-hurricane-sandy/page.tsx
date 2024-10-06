@@ -15,7 +15,7 @@ const page = () => {
             </div>
         </div>
         <div className="w-full lg:w-1/2 p-4">
-            <Image height={1000} width={1000} src="/public/images/logo.png" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
+            <Image height={1000} width={1000} src="https://github.com/jsdhami/Vayu/blob/main/public/images/blog/blog1.png" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
         </div>
     </div>
     </>
