@@ -21,7 +21,6 @@ interface Story {
 const StoryCard = ({ story, index }: { story: Story; index: number }) => {
   return (
     <>
-    <Navbar/>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -61,6 +60,7 @@ const StoryCard = ({ story, index }: { story: Story; index: number }) => {
         </div>
       </Link>
     </motion.div>
+    </>
   );
 };
 
@@ -76,6 +76,8 @@ const Stories = () => {
   );
 
   return (
+    <>
+    <Navbar/>
     <section className="bg-gray-800 bg-opacity-25 text-white py-16 min-h-screen">
       <main className="container mx-auto p-4">
         <motion.div

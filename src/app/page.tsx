@@ -6,7 +6,7 @@ import Navbar from "@/components/navbar/navbar";
 export default function Home() {
   return (
     <>
-     <Navbar/>
+      <Navbar />
       <div className="relative flex w-full flex-col items-top justify-center min-h-screen overflow-hidden">
         <video
           src="https://earth.gov/ghgcenter/earth-gas.83289921.mp4"
@@ -24,21 +24,11 @@ export default function Home() {
             difference.
           </p>
           <button className="bg-white text-black text-lg font-bold py-2 px-4 rounded-md">
-            <Link href="/animatedstory">Get Started</Link>
+            <Link href="https://go.com">Get Started</Link>
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center text-white bg-gray-800 p-8">
-        {/* <PlutoTimeline /> */}
-      </div>
-      <video
-        src="https://svs.gsfc.nasa.gov/vis/a000000/a005100/a005115/GHG_Composite_5760x3240p30.mp4"
-        autoPlay
-        loop
-        playsInline
-        className="w-full h-full object-cover"
-      ></video>
-      {/* <DystopianNewsFeed /> */}
+    
     </>
   );
 }

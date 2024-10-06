@@ -6,6 +6,8 @@ import { ArrowLeft, Clock, Tag } from 'lucide-react';
 import { stories } from '../data'; // Make sure to move your stories data to a separate file
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import Image from 'next/image';
+import Navbar from "@/components/navbar/navbar";
+
 
 // Helper function to create URL-friendly slug
 const createSlug = (title: string) => {
@@ -51,6 +53,8 @@ const StoryPage = ({ params }: PageProps) => {
   }
 
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-gray-800 bg-opacity-25 text-white py-16">
       <motion.div
         initial={{ opacity: 0 }}
@@ -143,6 +147,7 @@ const StoryPage = ({ params }: PageProps) => {
         </motion.div>
       </motion.div>
     </div>
+    </>
   );
 };
 
