@@ -7,12 +7,12 @@ export const stories = [
       tags: ["Climate", "Hurricane", "House Gases"],
     },
     {
-      image: "https://picsum.photos/id/10/400/300",
+      image: "https://github.com/jsdhami/Vayu/raw/refs/heads/main/public/images/blog/211.webp",
       title:
-        "Scientists Use Low-Cost Sensor Network to Track San Francisco Area Emissions",
+        "Navagating the Wildfires: How Climate Change is Affecting the Frequency and Intensity of Wildfires",
       description:
-        "Cities have implemented a variety of measures to meet greenhouse gas emissions goals, including expanding renewable energy use and incentivizing residents to drive electric cars. But a challenge for city leaders is measuring if policies are working. One solution is a network of low-cost sensors, scientists say.",
-      tags: ["Urban"],
+        "Wildfires in grasslands, forests, wildland vegetation, and rural areas are uncontrolled fires and have been occurring for thousands of years. Wildfires can burn in and above the soil. Ground fires can smolder for a long time -even an entire season- until conditions are right for them to grow to surface or crown fire. Wildfires can start with natural occurrences- such as lightning strikes- or a human-made spark. Wind, high temperatures, and little rainfall can all leave trees, shrubs, fallen leaves, and limbs dried out and primed to fuel a fire. Topography plays a big part too: flames burn uphill faster than they burn downhill.",
+      tags: ["Wildfires", "Climate Change", "wildland vegetation"],
     },
     {
       image: "https://picsum.photos/id/20/400/300",
