@@ -15,10 +15,10 @@ export const stories = [
       tags: ["Wildfires", "Climate Change", "wildland vegetation"],
     },
     {
-      image: "https://picsum.photos/id/20/400/300",
+      image: "https://github.com/jsdhami/Vayu/blob/main/public/images/blog/31.jpg?raw=true",
       title: "Melting Ice, Rising Seas: The Urgent Threat of Polar Ice Loss",
       description:
-        "NIST's Urban GHG Measurements Testbed System uses ground-based observing networks in Los Angeles, Indianapolis, and the Baltimore/Washington, D.C. region, together with aircraft measurements, data analyses, and other tools to improve the accuracy of local emissions estimates and advance transformative monitoring and measurement methods for the future.",
-      tags: ["Urban", "Anthropogenic Emissions"],
+        "The polar regions are experiencing significant ice loss at an alarming pace. The melting of ice in these areas is a major contributor to global sea level rise, posing a serious threat to coastal cities worldwide. Climate change is accelerating the ice melt in both Greenland and Antarctica, with long-term impacts on global shorelines. Ice plays a crucial role in protecting the Earth and its oceans. These bright, reflective areas help bounce excess heat back into space, which helps to keep the planet cooler. The Arctic, for example, stays colder than the equator because more solar heat is reflected off the ice back into space. Glaciers, some of which are several thousand years old, offer a historical record of climate change. Studying them provides vital information on how rapidly the planet is warming. At present, around 10% of the Earth's land area is covered by glacial ice, with roughly 90% located in Antarctica and the remaining 10% in Greenland. Rapid glacial melt in Antarctica and Greenland also impacts ocean currents. The influx of extremely cold meltwater into warmer oceans is slowing down these currents. Additionally, as ice on land melts, sea levels continue to rise. Sea ice forms and melts in the ocean, while glaciers form on land. Icebergs are pieces of glacial ice that break off from glaciers and fall into the sea. When glaciers melt, since their water is stored on land, the runoff substantially increases ocean water levels, contributing to global sea level rise. In contrast, melting sea ice does not directly raise sea levels, similar to ice cubes melting in a glass of water. However, the loss of Arctic sea ice leads to severe consequences. For example, it reduces the habitat for species like polar bears and walruses and alters global weather patterns by disrupting the jet stream.",
+      tags: ["Ice Loss", "Rising Seas"],
     },
   ];
