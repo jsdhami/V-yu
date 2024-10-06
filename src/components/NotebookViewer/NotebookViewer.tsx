@@ -30,16 +30,14 @@ interface NotebookViewerProps {
 const NotebookViewer: React.FC<NotebookViewerProps> = ({
   nbviewerUrl,
   colabUrl,
-  iframeWidth = "70%",
-  iframeHeight = "700px",
   buttonText = "Edit Notebook in Google Colab"
 }) => {
   return (
-    <div className="bg-gray-900 text-white p-8 rounded-lg shadow-lg">
+    <div className="bg-gray-900 text-white p-8 w-full min-h-screen rounded-lg shadow-lg">
       <div className="space-y-6 w-full flex flex-col items-center justify-center">
         <iframe
           src={nbviewerUrl}
-          className={`w-[${iframeWidth}] h-[${iframeHeight}] rounded-lg border-2 border-blue-500 shadow-xl`}
+          className={`w-full min-h-screen rounded-lg border-2 border-blue-500 shadow-xl`}
           title="Jupyter Notebook Viewer"
         />
         <a

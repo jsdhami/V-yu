@@ -18,7 +18,12 @@ const GlobeComponent = () => {
         .labelText('Code')
         .labelResolution(5)
         .labelDotRadius(0.2)
-        // .labelLabel(() => console.log(data))
+        .labelLabel((data)=>`
+          <h1>${data.Code}</h1>
+          <p>Country: ${data.Country}</p>
+          <p>Latitude: ${data.Latitude}</p>
+          <p>Longitude: ${data.Longitude}</p>
+        `)
         
            
         
