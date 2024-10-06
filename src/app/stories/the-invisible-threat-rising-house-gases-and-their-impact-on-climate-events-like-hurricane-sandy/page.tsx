@@ -18,12 +18,12 @@ const page = () => {
             </div>
         </div>
         <div className="w-full lg:w-1/2 p-4">
-            <Image height={1000} width={1000} src="https://github.com/jsdhami/Vayu/blob/main/public/images/blog/blo11.gif?raw=true" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
+            <Image height={600} width={1000} src="https://github.com/jsdhami/Vayu/blob/main/public/images/blog/blo11.gif?raw=true" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
         </div>
     </div>
     <div className="flex justify-between flex-wrap-reverse items-center min-h-full">
         <div className="w-full lg:w-1/2 p-4">
-                <Image height={1000} width={1000} src="https://github.com/jsdhami/Vayu/blob/main/public/images/blog/blo11.gif?raw=true" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
+                <Image height={600} width={1000} src="https://github.com/jsdhami/Vayu/raw/refs/heads/main/public/images/blog/1000w_q95.webp" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
         </div>
         <div className="w-full lg:w-1/2 p-4">
                 <h1 className="text-2xl font-bold mb-4">Intro about the Superstorm Sandy</h1>
@@ -38,17 +38,17 @@ const page = () => {
                 Rising CO₂ levels in the atmosphere are not only warming the oceans but also altering atmospheric circulation patterns, including the jet stream. These shifts in atmospheric patterns can impact the movement and trajectory of storms. In the case of Superstorm Sandy, these altered conditions may have contributed to its unusual westward turn, steering it into a highly populated area along the East Coast. Typically, storms in this region tend to curve out to sea, but Sandy’s path brought it directly into the New York and New Jersey areas, causing immense destruction. The warming of the Arctic due to climate change may have weakened the jet stream, creating a blocking pattern that prevented Sandy from following a more typical path. This atmospheric change, combined with other climatic factors, set the stage for Sandy’s devastating impact on densely populated urban centers.</p>
         </div>
         <div className="w-full lg:w-1/2 p-4">
-                <Image height={1000} width={1000} src="https://github.com/jsdhami/Vayu/blob/main/public/images/blog/blo11.gif?raw=true" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
+                <Image height={1000} width={1000} src="https://github.com/jsdhami/Vayu/blob/main/public/images/blog/patrick-hendry-6xeDIZgoPaw-unsplash.jpg?raw=true" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
         </div>
     </div>
 
     <div className="flex justify-between flex-wrap-reverse items-center min-h-full">
         <div className="w-full lg:w-1/2 p-4">
-                <Image height={1000} width={1000} src="https://github.com/jsdhami/Vayu/blob/main/public/images/blog/blo11.gif?raw=true" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
+                <Image height={1000} width={1000} src="https://github.com/jsdhami/Vayu/blob/main/public/images/blog/newplot%20(2).png?raw=true" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
         </div>
         <div className="w-full lg:w-1/2 p-4">
                 {/* <h1 className="text-2xl font-bold mb-4">Intro about the Superstorm Sandy</h1> */}
-                <p className="text-gray-400 mb-4">In addition to influencing the storm’s path, climate change likely increased the intensity and size of Sandy. Warmer ocean temperatures, driven by rising CO₂ levels, supplied the storm with more energy, making it more powerful. Sandy’s interaction with a cold front caused it to transform into a superstorm with an unusually large diameter, affecting a vast area and generating widespread damage. The storm’s intensity was further enhanced by increased precipitation, as warmer air holds more moisture. As a result, Sandy brought heavy rainfall across much of the northeastern U.S., leading to inland flooding and overwhelming already vulnerable infrastructure. While Sandy was a natural weather event, the influence of climate change on sea surface temperatures, atmospheric patterns, and precipitation likely intensified several aspects of the storm, ultimately resulting in more severe damage and greater human suffering.</p>
+                <p className="text-gray-400 mb-4">In addition to influencing the storm path, climate change likely increased the intensity and size of Sandy. Warmer ocean temperatures, driven by rising CO₂ levels, supplied the storm with more energy, making it more powerful. Sandy’s interaction with a cold front caused it to transform into a superstorm with an unusually large diameter, affecting a vast area and generating widespread damage. The storm’s intensity was further enhanced by increased precipitation, as warmer air holds more moisture. As a result, Sandy brought heavy rainfall across much of the northeastern U.S., leading to inland flooding and overwhelming already vulnerable infrastructure. While Sandy was a natural weather event, the influence of climate change on sea surface temperatures, atmospheric patterns, and precipitation likely intensified several aspects of the storm, ultimately resulting in more severe damage and greater human suffering.</p>
         </div>
     </div>
 
@@ -59,7 +59,7 @@ const page = () => {
                 <p className="text-gray-400 mb-4">Rising CO₂ levels in the atmosphere trap more heat, which is absorbed by the world’s oceans, leading to warmer sea surface temperatures and melting polar ice caps and glaciers. These changes are interconnected: warmer ocean waters not only provide the energy that fuels more intense hurricanes but also raise global sea levels, increasing the risk of severe coastal flooding. In the case of Superstorm Sandy in 2012, the Atlantic Ocean was unusually warm, allowing the storm to strengthen and sustain its intensity as it traveled up the coast. Elevated sea levels, combined with tidal factors and Sandy’s sheer size, resulted in record-breaking storm surges. These surges, along with the storm’s extensive reach, led to widespread flooding of subway systems, significant erosion of coastlines, and severe damage to infrastructure in the region. As CO₂ levels continue to rise, such compounded effects are likely to become more frequent, posing greater risks to coastal communities worldwide. Generally speaking, the warmer the water temperatures, the more heat energy is available and the higher the potential for tropical cyclones to develop. So it’s reasonable to assume that as humans continue to release planet-warming greenhouse gases, the likelihood of tropical cyclone activity increases.</p>
         </div>
         <div className="w-full lg:w-1/2 p-4">
-                <Image height={1000} width={1000} src="https://github.com/jsdhami/Vayu/blob/main/public/images/blog/blo11.gif?raw=true" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
+                <Image height={1000} width={1000} src="https://github.com/jsdhami/Vayu/blob/main/public/images/blog/newplot%20(6).png?raw=true" alt="Hurricane Sandy" className="w-full h-full object-cover rounded-lg shadow-lg" />
         </div>
     </div>
    </div>
