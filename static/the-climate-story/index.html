@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Climate Story | Vayu</title>
+
+    <!-- width=device-width is required to trigger GPU rasterizr: https://www.chromium.org/developers/design-documents/chromium-graphics/how-to-get-gpu-rasterization -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="./apple-touch-icon-precomposed.png">
+
+    <link rel="stylesheet" href="./styles/vendor.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+
+    <div id="app-container"></div>
+    <div id="chapter-nav-container"></div>
+    <div id="preloader-container"></div>
+    <div id="footer-container"></div>
+    <div id="social-container"></div>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        #preload-container {
+            height: calc(100% - 50px);
+        }
+
+        #footer-container {
+            bottom: 50px;
+        }
+
+        #sbs-footer {
+            display: none;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 13px 24px;
+            gap: 16px;
+            background-color: #1b2024;
+            color: #9ba4ac;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            line-height: 24px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        #sbs-footer a {
+            color: #f1f2f3;
+            text-decoration: none;
+            display: none;
+        }
+
+        #sbs-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+ 
+    <script src="./scripts/vendor/modernizr/modernizr.js"></script>
+    <script src="./scripts/vendor/detectizr/detectizr.js"></script>
+    <script src="./scripts/flightcheck.js"></script>
+
+    <script src="./scripts/main.js"></script>
+
+    <script type="text/javascript" src="//nexus.ensighten.com/sbs/prod/Bootstrap.js"></script>
+</body>
+
+</html>
