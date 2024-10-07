@@ -1,5 +1,5 @@
 ## Our Challenge: **Tell Us a Climate Story!**
-![Team Logo](./public/images/Vāyu.png)
+![Team Logo](./public/images/logo.png)
 
 ## Project OverView
 ### Get Start
